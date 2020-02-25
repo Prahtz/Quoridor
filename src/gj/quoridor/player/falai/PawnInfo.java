@@ -1,7 +1,7 @@
 package gj.quoridor.player.falai;
 
-public class PlayerPosition {
-	
+public class PawnInfo {
+
 	private int row;
 	private int column;
 	private int goal;
@@ -9,7 +9,7 @@ public class PlayerPosition {
 	private boolean isFirst;
 	public static final int MAX_WALL = 10;
 
-	public PlayerPosition(int row, int column, int goal) {
+	public PawnInfo(int row, int column, int goal) {
 		this.row = row;
 		this.column = column;
 		this.goal = goal;

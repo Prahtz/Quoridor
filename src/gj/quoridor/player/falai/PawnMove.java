@@ -33,36 +33,20 @@ public class PawnMove extends Move {
 	public void encode(Ways w, boolean isActualPlayerFirst) {
 		switch(w) {
 		case UP:
-			if(isActualPlayerFirst)  {
-				setMove(new int[] {0, 1});
-			}
-			else {
-				setMove(new int[] {0, 0});
-			}
+			if(isActualPlayerFirst) setMove(new int[] {0, 1});
+			else setMove(new int[] {0, 0});
 			break;
 		case DOWN:
-			if(isActualPlayerFirst) {
-				setMove(new int[] {0, 0});
-			}
-			else {
-				setMove(new int[] {0, 1}); 
-			}
+			if(isActualPlayerFirst) setMove(new int[] {0, 0});
+			else setMove(new int[] {0, 1}); 
 			break;
 		case LEFT:
-			if(isActualPlayerFirst) {
-				setMove(new int[] {0, 3});
-			}
-			else {
-				setMove(new int[] {0, 2});
-			}
+			if(isActualPlayerFirst) setMove(new int[] {0, 3});
+			else setMove(new int[] {0, 2});
 			break;
 		case RIGHT:
-			if(isActualPlayerFirst) {
-				setMove(new int[] {0, 2});
-			}
-			else {
-				setMove(new int[] {0, 3});
-			}
+			if(isActualPlayerFirst) setMove(new int[] {0, 2});
+			else setMove(new int[] {0, 3});
 			break;
 		default:
 			setMove(null);
